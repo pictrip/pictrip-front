@@ -1,0 +1,15 @@
+{
+  "name": "pictrip-front",
+  "scripts": {
+  },
+  "env": {
+  },
+  "formation": {
+  },
+  "addons": [
+
+  ],
+  "buildpacks": [
+
+  ]
+}
