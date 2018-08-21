@@ -1,15 +1,5 @@
 {
-  "name": "pictrip-front",
-  "scripts": {
-  },
-  "env": {
-  },
-  "formation": {
-  },
-  "addons": [
-
-  ],
-  "buildpacks": [
-
-  ]
+  "expo": {
+    "sdkVersion": "27.0.0"
+  }
 }
