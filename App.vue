@@ -1,17 +1,23 @@
 <template>
-  <view class="container">
-    <text class="text-color-primary">My Vue Native App</text>
-    </view>
+    <app-navigation></app-navigation>
 </template>
- 
-<style>
-.container {
-  background-color: white;
-  align-items: center;
-  justify-content: center;
-  flex: 1;
+
+<script>
+// import React from "react";
+import { StackNavigator } from "vue-native-router";
+// import HomeScreen from "../src/screens/homeScreen.vue";
+// import DetailsScreen from "../src/screens/detailsScreen.vue";
+import AppSignup from './src/screens/signup/index.vue';
+
+const AppNavigation = StackNavigator(
+  {
+    Singup: AppSignup,
+  },
+  {
+    initialRouteName: 'Singup',
+  }
+);
+export default {
+    components: { AppNavigation }
 }
-.text-color-primary {
-  color: blue;
-}
-</style>
+</script>
