@@ -6,9 +6,9 @@ node_js:
 stages:
 - test
 - name: review
-  if: NOT head_branch = master
+  if: (type IN (pull_request)) AND (NOT head_branch = master)
 - name: deploy
-  if: head_branch = master
+  if: (NOT type IN (pull_request)) AND (branch = master)
 
 before_script:
   - yarn install
